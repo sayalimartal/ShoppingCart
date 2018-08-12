@@ -16,7 +16,7 @@ table {
 }
 
 body {
-	background-color: #CCF9C3;
+	background-color: #D8F1F2;
 }
 section {
 	margin-right: 100px;
@@ -24,7 +24,6 @@ section {
 hr {
 	width:150%;
 	height:700%;
-	bg-color:black;
 }
 pre{
 font-family: monospace;
@@ -50,7 +49,7 @@ font-size: medium;
 <!-- Displays all the books  -->
 	<section>
 		<jstl:forEach var="book" items="${sessionScope.cartItems}">
-					<br><br>
+					<br>
 					<h2>${book.bookName}</h2>
 					<table>
 						<tr>

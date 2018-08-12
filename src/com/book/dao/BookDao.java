@@ -12,9 +12,11 @@ import com.book.bean.Book;
 //Interface for DAO
 public interface BookDao {
 
+	void addBooks();
 	TreeSet<Book> viewAllBooks();
 	void addBookToCart(int bookId);
 	void deleteBookFromCart(int bookId);
 	Collection<Book> viewCart();
+
 
 }

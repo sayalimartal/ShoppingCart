@@ -21,6 +21,14 @@ public class BookServiceImpl implements BookService {
 	}
 	
 	/* (non-Javadoc)
+	 * @see com.book.service.BookService#addBooks()
+	 */
+	@Override
+	public void addBooks() {
+		dao.addBooks();
+	}
+	
+	/* (non-Javadoc)
 	 * @see com.book.service.BookService#viewAllBooks()
 	 */
 	@Override

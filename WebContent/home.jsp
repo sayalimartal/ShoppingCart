@@ -15,7 +15,7 @@ table{
 font-family: monospace;
 }
 body{
-	background-color: #CCF9C3;
+	background-color: #D8F1F2;
 }
 section{
 	margin-right:100px;
@@ -23,7 +23,6 @@ section{
 hr{
 	width:150%;
 	height:700%;
-	bg-color:black;
 }
 .cont{
 	margin-left:30px;
@@ -42,7 +41,7 @@ font-size: medium;
 <div style="align: center" class="cont">
 <!-- List of books from which user can add books to cart for purchase -->
 	<h2 align="center">Books List</h2>
-	<br><br>
+	<br>
 		<section>
 <!-- Displays all books with their details -->
 			<jstl:forEach var="book" items="${requestScope.books}">

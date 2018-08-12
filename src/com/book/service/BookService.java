@@ -11,7 +11,8 @@ import com.book.bean.Book;
  */
 //Interface for Service
 public interface BookService {
-
+	
+	void addBooks();
 	TreeSet<Book> viewAllBooks();
 	void addBookToCart(int bookId);
 	void deleteBookFromCart(int bookId);

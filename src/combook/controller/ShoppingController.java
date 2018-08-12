@@ -56,6 +56,7 @@ public class ShoppingController extends HttpServlet {
 			
 		case "/refresh.app":
 			
+			service.addBooks();
 			TreeSet<Book> books = service.viewAllBooks();  //Retrieve list of available books
 			request.setAttribute("books", books);
 			

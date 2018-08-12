@@ -1,5 +1,7 @@
+/**
+ * 
+ */
 package com.book.dao;
-
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -9,7 +11,7 @@ import java.util.TreeSet;
 import com.book.bean.Book;
 
 /**
- * @author Sayali Martal
+ * @author sayali martal1
  *
  */
 
@@ -27,12 +29,16 @@ public class BookDaoImpl implements BookDao {
 	Book booke=new Book(104,"Fundamentals of Database Systems","Ramez Elmasri and Shamkant Navathe","It systematically builds on the core fundamental concepts necessary for designing, using and implementing database systems and database applications.",719,"Fundamentals-of-database-systems.jpeg",1);
 	
 	@Override
-	public TreeSet<Book> viewAllBooks() { //View list of available books
+	public void addBooks() 	{ //Add books to a TreeSet
 		books.add(booka);
 		books.add(bookb);
 		books.add(bookc);
 		books.add(bookd);
 		books.add(booke);
+	}
+	
+	@Override
+	public TreeSet<Book> viewAllBooks() { //View list of available books
 		return books;
 	}
 	
